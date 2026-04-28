@@ -39,7 +39,7 @@ public class Main {
 
         System.out.println("Pago final: $" + estudiante.calcularPagoFinal());
 
-        System.out.println("Pago con descuento extra: $" +
+        System.out.println("Pago con descuento extra: $ " +
                 estudiante.calcularPagoFinal(50));
     }
 }
