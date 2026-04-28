@@ -30,4 +30,12 @@ public class Estudiante {
         System.out.println("Promedio: " + promedio);
         System.out.println("Matrícula: $" + valorMatricula);
     }
+
+    public boolean validarPromedio() {
+        return promedio >= 0 && promedio <= 10;
+    }
+
+    public double calcularPagoFinal(double descuentoExtra) {
+        return calcularPagoFinal() - descuentoExtra;
+    }
 }
