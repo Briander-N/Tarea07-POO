@@ -21,6 +21,19 @@ public class Main {
 
         System.out.print("Ingrese publicaciones: ");
         int publicaciones = sc.nextInt();
-        
+
+        // Polimorfismo
+        PersonaAcademica persona = new DocenteInvestigador(codigo, nombre, edad, horasClase, valorHora, publicaciones
+        );
+
+        persona.mostrarDatos();
+        persona.describirRol();
+
+        System.out.println("Pago final: $" + persona.calcularPago());
+        // Para usar la sobrecarga
+        DocenteInvestigador docente = (DocenteInvestigador) persona;
+
+        System.out.println("Pago con bono extra: $" +
+                docente.calcularPago(50));
     }
 }
